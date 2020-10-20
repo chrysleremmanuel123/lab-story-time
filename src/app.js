@@ -36,23 +36,18 @@ function doesFriendExist(ageInText, ageInNumber) {
 //On her way to the river, she ate another z sweets every n meters travelled
 //Her friend divided the remaining sweets into 2 parts for each
 //How many sweets did her friend get to eat?
+
 function sweetTooth(totalNoOfSweets, sweetsConsumedByKaren, sweetsConsumedInNMeters, metersToTravel) {
-    var x = totalNoOfSweets;
-    var y = sweetsConsumedByKaren;
-    var z = sweetsConsumedInNMeters;
-    var a = metersToTravel;
-    var b = x - (y + (z * a));
-    var c = b / 2;
-    return c;
+    var remainingSweets = totalNoOfSweets - sweetsConsumedByKaren - (sweetsConsumedInNMeters * metersToTravel);
+    return remainingSweets / 2;
 }
 //Progression 5:
 //As Lily moves closer, it gets colder. She checks the temperature on her mobile
 //It only shows in fahrenheit. Convert the data to celsius and return it.
 function convertToCelsius(fahrenheit) {
-    var a = (fahrenheit - 32) * (5 / 9);
-    return a;
-
+    return (5 / 9) * (fahrenheit - 32);
 }
+
 //Progression 6:
 //Lily can now do multiple things to deal with this
 //1. Take her daughter to a doctor
@@ -61,24 +56,18 @@ function convertToCelsius(fahrenheit) {
 //4. Lock her daughter in her room
 //Given a value, return which of these above actions Lily would take
 function aDifficultChoice(choice) {
+    let choiceTook;
     switch (choice) {
-        case 1:
-            choice = "Take her daughter to a doctor";
+        case 1: choiceTook = "Take her daughter to a doctor";
             break;
-        case 2:
-            choice = "Talk to her husband about it";
+        case 2: choiceTook = "Talk to her husband about it";
             break;
-        case 3:
-            choice = "Counsel her daughter herself";
+        case 3: choiceTook = "Counsel her daughter herself";
             break;
-        case 4:
-            choice = "Lock her daughter in her room";
+        case 4: choiceTook = "Lock her daughter in her room";
             break;
     }
-    return choice;
-
-
-}
+    return c
 //Progression 7:
 //Lily realized that she'd hurt her daughter
 //All she wants now is for her to stop crying
@@ -87,8 +76,4 @@ function aDifficultChoice(choice) {
 //Take all of Lily's strategies and concatenate them to a single var
 //Seperate the strategies by a single space
 //Return the length of the complete strategy
-function consoleKaren(strategies) {
 
-
-
-}
